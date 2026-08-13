@@ -52,7 +52,7 @@
             align-items: center;
         }
 
-        /* Fejléc / Hero section */
+        /* Hero section */
         .hero {
             text-align: center;
             margin: 30px 0 50px 0;
@@ -82,6 +82,20 @@
 
         /* Gombok */
         .btn-main {
+            background-color: #00e676;
+            color: #000000;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-download {
             background-color: #2ecc71;
             color: #ffffff;
             padding: 12px 28px;
@@ -90,15 +104,14 @@
             font-weight: 700;
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
+            gap: 10px;
             cursor: pointer;
             border: none;
             font-size: 15px;
             transition: background 0.2s ease;
         }
 
-        .btn-main:hover {
+        .btn-download:hover {
             background-color: #27ae60;
         }
 
@@ -114,12 +127,12 @@
 
         .join-section {
             display: flex;
-            gap: 40px;
+            gap: 30px;
             align-items: center;
         }
 
         .monitor-box {
-            flex: 1.1;
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -141,29 +154,30 @@
         }
 
         .join-details h2 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
             margin-bottom: 15px;
             color: #ffffff;
         }
 
-        .tagline {
-            font-weight: 700;
+        .bold-tagline {
+            font-weight: 800;
             color: #ffffff;
-            font-size: 15px;
+            font-size: 16px;
             margin-bottom: 15px;
+            max-width: 450px;
             line-height: 1.4;
         }
 
         .sub-tagline {
             color: #a0a5b5;
-            font-size: 14px;
+            font-size: 15px;
             margin-bottom: 20px;
         }
 
         .steps-list {
             color: #ffffff;
-            font-size: 14px;
+            font-size: 15px;
             text-align: left;
             margin-bottom: 20px;
             line-height: 2;
@@ -173,7 +187,7 @@
         .wish-text {
             color: #00e676;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 15px;
             margin-bottom: 20px;
         }
 
@@ -193,7 +207,6 @@
         }
 
         .spec-card ul {
-            list-style-type: disc;
             padding-left: 20px;
         }
 
@@ -315,12 +328,12 @@
         <!-- Csatlakozás Szakasz -->
         <div class="card join-section">
             <div class="monitor-box">
-                <!-- Monitor Kép beillesztése -->
                 <img src="monitor.png" alt="GUIDMTA Monitor" onerror="this.onerror=null; this.src='https://via.placeholder.com/450x300/0b0e14/ffffff?text=monitor.png+hianyzik';">
             </div>
             <div class="join-details">
                 <h2>Csatlakozás a GUIDMTA szerverére</h2>
-                <p class="tagline">Légy részese Magyarország legnagyobb és legoptimalizáltabb GazdagRP közösségének!</p>
+                
+                <p class="bold-tagline">Légy részese Magyarország legnagyobb és legoptimalizáltabb GazdagRP közösségének!</p>
                 <p class="sub-tagline">Vágj bele a második életedbe, itt minden lehetséges!</p>
                 
                 <ul class="steps-list">
@@ -331,7 +344,13 @@
                 </ul>
 
                 <p class="wish-text">Kellemes időtöltést kívánunk!</p>
-                <a href="javascript:void(0);" class="btn-main">📥 MTA:SA letöltése</a>
+
+                <a href="javascript:void(0);" class="btn-download">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    MTA:SA letöltése
+                </a>
             </div>
         </div>
 
