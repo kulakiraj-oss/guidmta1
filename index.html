@@ -12,31 +12,24 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             background-color: #0b0e14;
             color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
 
-        /* Navigáció - Jobb felső sarokban */
+        /* Navigáció */
         nav {
-            position: absolute;
-            top: 0;
-            right: 0;
             width: 100%;
             max-width: 1200px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 25px 40px;
+            padding: 20px;
             gap: 20px;
-            z-index: 10;
         }
 
         nav a {
@@ -44,7 +37,6 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 14px;
-            transition: color 0.2s;
         }
 
         nav a:hover {
@@ -54,32 +46,27 @@
         .container {
             width: 100%;
             max-width: 1100px;
-            padding: 0 20px 40px 20px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* HERO SECTION - Pontosan kitölti a teljes képernyőt (100vh) */
+        /* Hero section */
         .hero {
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
+            margin: 30px 0 50px 0;
         }
 
-        .logo-img {
-            width: 90px;
-            height: auto;
-            margin-bottom: 25px;
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 52px;
-            font-weight: 900;
+            font-size: 48px;
+            font-weight: 800;
             color: #00e676;
             letter-spacing: 2px;
             margin-bottom: 15px;
@@ -88,60 +75,31 @@
         .subtitle {
             color: #a0a5b5;
             font-size: 16px;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 30px auto;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
-        /* Gombok */
         .btn-main {
             background-color: #00e676;
             color: #000000;
-            padding: 14px 32px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 800;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 15px;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .btn-main:hover {
-            transform: translateY(-2px);
-            background-color: #00c853;
-        }
-
-        .btn-download {
-            background-color: #2ecc71;
-            color: #ffffff;
             padding: 12px 28px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 700;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            border: none;
-            font-size: 15px;
-            transition: background 0.2s ease;
+            gap: 8px;
         }
 
-        .btn-download:hover {
-            background-color: #27ae60;
-        }
-
-        /* Kártyák / Szakaszok */
+        /* Kártyák */
         .card {
             background-color: #121722;
             border: 1px solid #1a202c;
             border-radius: 12px;
-            padding: 40px;
+            padding: 35px;
             width: 100%;
-            margin-bottom: 30px;
-            scroll-margin-top: 40px;
+            margin-bottom: 25px;
         }
 
         .join-section {
@@ -164,12 +122,13 @@
             display: block;
         }
 
+        /* Jobb oldali tartalom KÖZÉPRE igazítása */
         .join-details {
             flex: 1.2;
-            text-align: center;
+            text-align: center !important;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center !important;
         }
 
         .join-details h2 {
@@ -210,13 +169,33 @@
             margin-bottom: 20px;
         }
 
+        .btn-download {
+            background-color: #2ecc71;
+            color: #ffffff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 15px;
+            transition: background 0.2s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #27ae60;
+        }
+
         /* Rendszerkövetelmények */
         .specs-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
+            gap: 20px;
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .spec-card h3 {
@@ -249,13 +228,13 @@
 
         .discord-info h2 {
             font-size: 24px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .discord-info p {
             color: #a0a5b5;
             font-size: 14px;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
 
         .discord-list {
@@ -265,7 +244,7 @@
         .discord-list li {
             color: #a0a5b5;
             font-size: 14px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .discord-list li::before {
@@ -277,17 +256,13 @@
         .btn-discord {
             background-color: #5865f2;
             color: #ffffff;
-            padding: 12px 26px;
+            padding: 12px 24px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 10px;
-        }
-
-        .btn-discord:hover {
-            background-color: #4752c4;
         }
 
         /* Lábléc */
@@ -311,11 +286,6 @@
             color: #ffffff;
         }
 
-        .footer-logo img {
-            width: 22px;
-            height: auto;
-        }
-
         @media (max-width: 850px) {
             .join-section {
                 flex-direction: column;
@@ -328,28 +298,29 @@
 </head>
 <body>
 
-    <!-- Navigáció kattintásra való csúsztatással -->
     <nav>
-        <a href="#csatlakozas">Segítség</a>
+        <a href="javascript:void(0);">Segítség</a>
         <span>|</span>
-        <a href="#discord">Közösség</a>
+        <a href="https://discord.gg/tVzp7sYgv" target="_blank">Közösség</a>
         <span>|</span>
         <a href="javascript:void(0);">Szabályzat</a>
     </nav>
 
     <div class="container">
         
-        <!-- Főoldal (Képernyő kitöltő rész) -->
+        <!-- Hero Section -->
         <div class="hero">
-            <img src="logo.png.png" alt="GUIDMTA Logo" class="logo-img" onerror="this.onerror=null; this.src='logo.png';">
-            
+            <svg class="logo" viewBox="0 0 100 100" fill="none">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00e676" stroke-width="8" fill="none"/>
+                <path d="M65 35 H45 V65 H65 V50 H55" stroke="#00e676" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
             <h1>GUIDMTA</h1>
             <p class="subtitle">Kezd el a saját RP Karaktered a GUIDMTA szerverén, és alakítsd úgy a karaktered - ahogyan szeretnéd!</p>
-            <a href="#csatlakozas" class="btn-main">► Csatlakozz most</a>
+            <a href="javascript:void(0);" class="btn-main">► Csatlakozz most</a>
         </div>
 
-        <!-- Csatlakozás Szakasz (A Segítség / Csatlakozz gombra ide dob) -->
-        <div id="csatlakozas" class="card join-section">
+        <!-- Csatlakozás Szakasz -->
+        <div class="card join-section">
             <div class="monitor-box">
                 <img src="monitor.png" alt="GUIDMTA Monitor" onerror="this.onerror=null; this.src='https://via.placeholder.com/450x300/0b0e14/ffffff?text=monitor.png+hianyzik';">
             </div>
@@ -357,7 +328,6 @@
                 <h2>Csatlakozás a GUIDMTA szerverére</h2>
                 
                 <p class="bold-tagline">Légy részese Magyarország legnagyobb és legoptimalizáltabb GazdagRP közösségének!</p>
-                
                 <p class="sub-tagline">Vágj bele a második életedbe, itt minden lehetséges!</p>
                 
                 <ul class="steps-list">
@@ -405,8 +375,8 @@
             </div>
         </div>
 
-        <!-- Discord Szakasz (A Közösség gombra ide dob) -->
-        <div id="discord" class="card discord-card">
+        <!-- Discord Szakasz -->
+        <div class="card discord-card">
             <div class="discord-info">
                 <h2>Csatlakozz Discord szerverünkre</h2>
                 <p>Légy részese a legaktívabb MTA közösségnek! Kérdezz, beszélgess más<br>játékosokkal, értesülj az eseményekről első kézből.</p>
@@ -428,10 +398,13 @@
 
     </div>
 
-    <!-- Lábléc -->
+    <!-- Footer -->
     <footer>
         <div class="footer-logo">
-            <img src="logo.png.png" alt="GUIDMTA Logo" onerror="this.onerror=null; this.src='logo.png';">
+            <svg width="20" height="20" viewBox="0 0 100 100" fill="none">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00e676" stroke-width="8" fill="none"/>
+                <path d="M65 35 H45 V65 H65 V50 H55" stroke="#00e676" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
             GUIDMTA
         </div>
         <div>A legmodernebb magyar RolePlay közösség © 2026</div>
