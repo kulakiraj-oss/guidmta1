@@ -12,6 +12,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Sima görgetés az hivatkozásokhoz */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: #0b0e14;
             color: #ffffff;
@@ -28,7 +33,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 20px;
+            padding: 15px 20px;
             gap: 20px;
         }
 
@@ -37,6 +42,7 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 14px;
+            transition: color 0.2s;
         }
 
         nav a:hover {
@@ -46,22 +52,23 @@
         .container {
             width: 100%;
             max-width: 1100px;
-            padding: 20px;
+            padding: 10px 20px 20px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Hero section */
+        /* Hero section - Kisebb alsó hézaggal */
         .hero {
             text-align: center;
-            margin: 30px 0 50px 0;
+            margin: 15px 0 25px 0;
         }
 
-        .logo {
+        .logo-img {
             width: 80px;
-            height: 80px;
-            margin-bottom: 20px;
+            height: auto;
+            margin-bottom: 15px;
+            display: inline-block;
         }
 
         h1 {
@@ -69,14 +76,14 @@
             font-weight: 800;
             color: #00e676;
             letter-spacing: 2px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .subtitle {
             color: #a0a5b5;
             font-size: 16px;
             max-width: 650px;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 20px auto;
             line-height: 1.5;
         }
 
@@ -115,14 +122,14 @@
             background-color: #27ae60;
         }
 
-        /* Kártyák / Szakaszok */
+        /* Kártyák / Szakaszok - Kisebb alsó hézaggal */
         .card {
             background-color: #121722;
             border: 1px solid #1a202c;
             border-radius: 12px;
-            padding: 35px;
+            padding: 30px;
             width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .join-section {
@@ -156,7 +163,7 @@
         .join-details h2 {
             font-size: 26px;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #ffffff;
         }
 
@@ -164,7 +171,7 @@
             font-weight: 800;
             color: #ffffff;
             font-size: 16px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             max-width: 450px;
             line-height: 1.4;
         }
@@ -172,15 +179,15 @@
         .sub-tagline {
             color: #a0a5b5;
             font-size: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .steps-list {
             color: #ffffff;
             font-size: 15px;
             text-align: left;
-            margin-bottom: 20px;
-            line-height: 2;
+            margin-bottom: 15px;
+            line-height: 1.8;
             list-style: none;
         }
 
@@ -188,7 +195,7 @@
             color: #00e676;
             font-weight: 700;
             font-size: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         /* Rendszerkövetelmények */
@@ -197,12 +204,12 @@
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .spec-card h3 {
             font-size: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #ffffff;
         }
 
@@ -212,7 +219,7 @@
 
         .spec-card li {
             font-size: 14px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: #a0a5b5;
             line-height: 1.5;
         }
@@ -278,7 +285,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 30px 20px;
+            padding: 25px 20px;
             border-top: 1px solid #1a202c;
             color: #a0a5b5;
             font-size: 14px;
@@ -290,6 +297,11 @@
             gap: 10px;
             font-weight: bold;
             color: #ffffff;
+        }
+
+        .footer-logo img {
+            width: 24px;
+            height: auto;
         }
 
         @media (max-width: 850px) {
@@ -304,10 +316,11 @@
 </head>
 <body>
 
+    <!-- Navigáció kattintható ugró hivatkozásokkal -->
     <nav>
-        <a href="javascript:void(0);">Segítség</a>
+        <a href="#csatlakozas">Segítség</a>
         <span>|</span>
-        <a href="https://discord.gg/tVzp7sYgv" target="_blank">Közösség</a>
+        <a href="#discord">Közösség</a>
         <span>|</span>
         <a href="javascript:void(0);">Szabályzat</a>
     </nav>
@@ -316,17 +329,16 @@
         
         <!-- Hero Section -->
         <div class="hero">
-            <svg class="logo" viewBox="0 0 100 100" fill="none">
-                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00e676" stroke-width="8" fill="none"/>
-                <path d="M65 35 H45 V65 H65 V50 H55" stroke="#00e676" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
+            <!-- A SAJT LOGÓD BEILLESZTVE -->
+            <img src="logo.png.png" alt="GUIDMTA Logo" class="logo-img" onerror="this.onerror=null; this.src='logo.png';">
+            
             <h1>GUIDMTA</h1>
             <p class="subtitle">Kezd el a saját RP Karaktered a GUIDMTA szerverén, és alakítsd úgy a karaktered - ahogyan szeretnéd!</p>
-            <a href="javascript:void(0);" class="btn-main">► Csatlakozz most</a>
+            <a href="#csatlakozas" class="btn-main">► Csatlakozz most</a>
         </div>
 
-        <!-- Csatlakozás Szakasz (A MINTÁNAK MEGFELELŐEN BEÁLLÍTVA) -->
-        <div class="card join-section">
+        <!-- Csatlakozás Szakasz (Ide ugrik a Segítség gombra kattintva) -->
+        <div id="csatlakozas" class="card join-section">
             <div class="monitor-box">
                 <img src="monitor.png" alt="GUIDMTA Monitor" onerror="this.onerror=null; this.src='https://via.placeholder.com/450x300/0b0e14/ffffff?text=monitor.png+hianyzik';">
             </div>
@@ -382,8 +394,8 @@
             </div>
         </div>
 
-        <!-- Discord Szakasz -->
-        <div class="card discord-card">
+        <!-- Discord Szakasz (Ide ugrik a Közösség gombra kattintva) -->
+        <div id="discord" class="card discord-card">
             <div class="discord-info">
                 <h2>Csatlakozz Discord szerverünkre</h2>
                 <p>Légy részese a legaktívabb MTA közösségnek! Kérdezz, beszélgess más<br>játékosokkal, értesülj az eseményekről első kézből.</p>
@@ -408,10 +420,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-logo">
-            <svg width="20" height="20" viewBox="0 0 100 100" fill="none">
-                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00e676" stroke-width="8" fill="none"/>
-                <path d="M65 35 H45 V65 H65 V50 H55" stroke="#00e676" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
+            <img src="logo.png.png" alt="GUIDMTA Logo" onerror="this.onerror=null; this.src='logo.png';">
             GUIDMTA
         </div>
         <div>A legmodernebb magyar RolePlay közösség © 2026</div>
