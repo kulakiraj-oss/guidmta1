@@ -17,6 +17,7 @@
             background-color: #111827;
             color: #f3f4f6;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -73,23 +74,8 @@
             color: #10b981;
         }
 
-        .download-btn-nav {
-            background-color: #10b981;
-            color: #111827;
-            padding: 8px 18px;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 14px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
-        .download-btn-nav:hover {
-            background-color: #059669;
-        }
-
         .hero {
-            height: 70vh;
+            height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -100,140 +86,71 @@
         }
 
         .hero-logo {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .hero-logo img {
-            height: 120px;
+            height: 90px;
             width: auto;
         }
 
         .hero h2 {
-            font-size: 56px;
+            font-size: 52px;
             color: #f9fafb;
             margin-bottom: 15px;
             font-weight: 800;
         }
 
         .hero p {
-            font-size: 20px;
-            color: #e5e7eb;
-            max-width: 700px;
-            margin-bottom: 40px;
+            font-size: 18px;
+            color: #9ca3af;
+            max-width: 650px;
+            margin-bottom: 35px;
         }
 
-        .info-container {
-            max-width: 1100px;
-            margin: -50px auto 50px auto;
-            display: grid;
-            grid-template-columns: 350px 1fr;
-            gap: 30px;
-            position: relative;
-            z-index: 10;
-            padding: 0 20px;
-        }
-
-        .server-status-card {
-            background-color: #1f2937;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            border: 1px solid #374151;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .server-status-header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #374151;
-            padding-bottom: 20px;
-        }
-
-        .status-logo img {
-            height: 70px;
-            margin-bottom: 10px;
-        }
-
-        .server-title {
-            font-size: 20px;
+        .hero-btn {
+            background-color: #10b981;
+            color: #111827;
+            padding: 12px 28px;
+            border-radius: 8px;
             font-weight: 700;
-        }
-
-        .online-count {
-            font-size: 48px;
-            font-weight: 900;
-            color: #10b981;
-            line-height: 1;
-        }
-
-        .online-text {
-            color: #9ca3af;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-            border-top: 1px solid #374151;
-            padding-top: 20px;
-        }
-
-        .social-item {
-            display: flex;
-            flex-direction: column;
+            font-size: 16px;
+            border: none;
+            cursor: default;
+            display: inline-flex;
             align-items: center;
-            text-decoration: none;
-            color: #9ca3af;
-            font-size: 13px;
-            gap: 5px;
-            transition: color 0.3s;
+            gap: 10px;
         }
 
-        .social-item:hover {
-            color: #10b981;
-        }
-
-        .social-circle {
-            width: 50px;
-            height: 50px;
-            background-color: #111827;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
-
-        .social-circle img {
-            width: 24px;
-            height: 24px;
-            object-fit: contain;
+        .content-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
         .connect-card {
             background-color: #1f2937;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
             border: 1px solid #374151;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
         }
 
-        .connect-card h3 {
-            font-size: 24px;
+        .connect-info h3 {
+            font-size: 28px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #f9fafb;
         }
 
-        .connect-card p {
+        .connect-info p {
             color: #9ca3af;
             font-size: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .steps-list {
@@ -242,11 +159,11 @@
             font-size: 15px;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 10px;
             margin-bottom: 25px;
         }
 
-        .download-btn-main {
+        .download-btn {
             background-color: #10b981;
             color: #111827;
             padding: 12px 24px;
@@ -257,69 +174,79 @@
             align-items: center;
             gap: 10px;
             transition: background 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
-        .download-btn-main:hover {
+        .download-btn:hover {
             background-color: #059669;
         }
 
-        .news-section {
-            max-width: 1100px;
-            margin: 0 auto 50px auto;
-            padding: 0 20px;
+        .monitor-preview {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #374151;
+            overflow: hidden;
+            background-color: #111827;
         }
 
-        .news-header {
+        .monitor-preview img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .discord-card {
+            background-color: #1f2937;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+            border: 1px solid #374151;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
+            margin-top: 40px;
         }
 
-        .news-header h2 {
+        .discord-text h3 {
             font-size: 26px;
             font-weight: 700;
+            margin-bottom: 10px;
+            color: #f9fafb;
         }
 
-        .news-box {
-            background-color: #1f2937;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #374151;
-            text-align: center;
+        .discord-text p {
             color: #9ca3af;
+            font-size: 15px;
+            margin-bottom: 20px;
+            max-width: 600px;
         }
 
-        .bottom-socials {
+        .discord-perks {
+            list-style: none;
+            color: #d1d5db;
+            font-size: 14px;
             display: flex;
-            justify-content: center;
-            gap: 60px;
-            padding: 40px 20px;
+            flex-direction: column;
+            gap: 8px;
         }
 
-        .big-social-circle {
-            width: 90px;
-            height: 90px;
-            background-color: #1f2937;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            border: 1px solid #374151;
-            transition: transform 0.3s, border-color 0.3s;
+        .discord-btn {
+            background-color: #5865F2;
+            color: #ffffff;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 700;
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s;
+            white-space: nowrap;
         }
 
-        .big-social-circle:hover {
-            transform: translateY(-5px);
-            border-color: #10b981;
-        }
-
-        .big-social-circle img {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
+        .discord-btn:hover {
+            background-color: #4752C4;
         }
 
         footer {
@@ -329,6 +256,7 @@
             text-align: center;
             color: #6b7280;
             font-size: 14px;
+            margin-top: 80px;
         }
 
         footer a {
@@ -345,9 +273,9 @@
             <h1>GUIDMTA</h1>
         </div>
         <nav>
-            <button class="nav-link" onclick="document.getElementById('hirek').scrollIntoView({behavior: 'smooth'});">Hírek</button>
-            <a href="https://discord.gg/tVzp7sYgv" target="_blank" class="nav-link">Közösség</a>
-            <button class="nav-link download-btn-nav" onclick="downloadGUIDMTA()">MTA:SA letöltése</button>
+            <button class="nav-link" onclick="document.getElementById('segitseg').scrollIntoView({behavior: 'smooth'});">Segítség</button>
+            <button class="nav-link" onclick="document.getElementById('kozosseg').scrollIntoView({behavior: 'smooth'});">Közösség</button>
+            <a href="#" onclick="alert('A Szabályzat jelenleg szerkesztés alatt áll!'); return false;" class="nav-link">Szabályzat</a>
         </nav>
     </header>
 
@@ -355,78 +283,52 @@
         <div class="hero-logo">
             <img src="logo.png" alt="GUIDMTA Logo">
         </div>
-        <h2>Üdvözlünk a GUIDMTA oldalán!</h2>
-        <p>Légy részese Magyarország legnagyobb és legoptimalizáltabb GazdagRP közösségének!</p>
-        <button class="download-btn-main" onclick="downloadGUIDMTA()">
-            MTA:SA letöltése
+        <h2>GUIDMTA</h2>
+        <p>Kezd el a saját RP Karaktered a GUIDMTA szerverén, és alakítsd úgy a karaktered - ahogyan szeretnéd!</p>
+        <button class="hero-btn">
+            ▶ Csatlakozz most
         </button>
     </section>
 
-    <section class="info-container">
-        <div class="server-status-card">
-            <div>
-                <div class="server-status-header">
-                    <div class="status-logo">
-                        <img src="logo.png" alt="Logo">
-                    </div>
-                    <span class="server-title">GUIDMTA</span>
-                </div>
-                <div style="text-align: center;">
-                    <div class="online-count">0</div>
-                    <div class="online-text">Online játékos</div>
-                </div>
-            </div>
-            
-            <div class="social-icons">
-                <a href="https://discord.gg/tVzp7sYgv" target="_blank" class="social-item">
-                    <div class="social-circle">
-                        <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
-                    </div>
-                    Discord
-                </a>
-                <a href="#" onclick="alert('Az UCP jelenleg fejlesztés alatt áll!'); return false;" class="social-item">
-                    <div class="social-circle">
-                        <svg width="20" height="20" fill="#9ca3af" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-                    </div>
-                    UCP
-                </a>
-            </div>
-        </div>
-
+    <div id="segitseg" class="content-section">
         <div class="connect-card">
-            <h3>Csatlakozás a GUIDMTA szerverére</h3>
-            <p>Vágj bele a második életedbe, itt minden lehetséges!</p>
-            <ol class="steps-list">
-                <li>Grand Theft Auto: San Andreas telepítése</li>
-                <li>MTA:SA kliens letöltése (Gombra kattintva)</li>
-                <li>MTA:SA kliens indítása</li>
-                <li>GUIDMTA keresése a szerverek között</li>
-            </ol>
-            <button class="download-btn-main" onclick="downloadGUIDMTA()">MTA:SA letöltése</button>
+            <div class="monitor-preview">
+                <img src="monitor.png" alt="GUIDMTA Kliens">
+            </div>
+            <div class="connect-info">
+                <h3>Csatlakozás a GUIDMTA szerverére</h3>
+                <p>Vágj bele a második életedbe, itt minden lehetséges!</p>
+                <ol class="steps-list">
+                    <li>Grand Theft Auto: San Andreas telepítése</li>
+                    <li>MTA:SA kliens letöltése</li>
+                    <li>MTA:SA kliens indítása</li>
+                    <li>GUIDMTA szócska begépelése a keresőbe</li>
+                </ol>
+                <p style="color: #10b981; font-size: 14px; margin-bottom: 20px; font-weight: 600;">Kellemes időtöltést kívánunk!</p>
+                <button class="download-btn" onclick="downloadGUIDMTA()">MTA:SA letöltése</button>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section id="hirek" class="news-section">
-        <div class="news-header">
-            <h2>Hírek</h2>
+    <div id="kozosseg" class="content-section">
+        <div class="discord-card">
+            <div class="discord-text">
+                <h3>Csatlakozz Discord szerverünkhöz</h3>
+                <p>Légy részese a legaktívabb MTA közösségnek! Kérdezz, beszélgess más játékosokkal, értesülj az eseményekről első kézből.</p>
+                <ul class="discord-perks">
+                    <li>✓ Közvetlenül tudsz beszélni a vezetőséggel</li>
+                    <li>✓ Eseményekkel és a versenyekkel is tisztában leszel</li>
+                    <li>✓ Amennyiben valamit szeretnél jelenteni itt tudod megtenni</li>
+                </ul>
+            </div>
+            <a href="https://discord.gg/tVzp7sYgv" target="_blank" class="discord-btn">
+                Csatlakozás
+            </a>
         </div>
-        <div class="news-box">
-            <p>Hírek betöltése...</p>
-        </div>
-    </section>
-
-    <div class="bottom-socials">
-        <a href="https://discord.gg/tVzp7sYgv" target="_blank" class="big-social-circle" title="Discord">
-            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
-        </a>
-        <a href="#" onclick="alert('A TikTok oldal jelenleg fejlesztés alatt áll!'); return false;" class="big-social-circle" title="TikTok">
-            <img src="https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/de38cf18991fa7469a53.svg" alt="TikTok">
-        </a>
     </div>
 
     <footer>
-        <p>&copy; 2026 GUIDMTA - Minden jog fenntartva!</p>
-        <p style="margin-top: 5px;">Kapcsolatfelvétel: <a href="mailto:support@guidmta.hu">support@guidmta.hu</a></p>
+        <p>A legmodernebb magyar RolePlay közösség &copy; 2026</p>
     </footer>
 
     <script>
