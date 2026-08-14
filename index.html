@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
+<!DOCTYPE html><html lang="hu"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUIDMTA - RolePlay</title>
@@ -77,8 +75,8 @@
         }
 
         .logo-svg {
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
             margin-bottom: 20px;
         }
 
@@ -325,9 +323,7 @@
                 grid-template-columns: 1fr;
             }
         }
-    </style>
-</head>
-<body>
+    </style></head><body>
 
     <!-- Navigáció -->
     <nav>
@@ -335,25 +331,25 @@
         <span>|</span>
         <a href="#kozosseg-resz">Közösség</a>
         <span>|</span>
-        <a href="javascript:void(0);">Szabályzat</a>
+        <a href="szabalyzat.html">Szabályzat</a>
     </nav>
 
     <div class="container">
         
         <!-- FŐOLDAL -->
         <div class="hero">
-            <!-- PONTOS LOGÓ VEKTORRAL -->
+            <!-- PONTOS 2. KÉP ALAPJÁN KÉSZÜLT ZÖLD LOGÓ -->
             <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Külső keret -->
-                <path d="M50 8 L87 29.5 L87 70.5 L50 92 L13 70.5 L13 29.5 Z" fill="#1ea648"/>
-                <path d="M50 16 L79 32.5 L79 67.5 L50 84 L21 67.5 L21 32.5 Z" fill="#0b0e14"/>
-                <path d="M50 8 L87 29.5 L50 50 Z" fill="#2cc257" opacity="0.3"/>
-                <path d="M50 92 L87 70.5 L50 50 Z" fill="#168037" opacity="0.4"/>
+                <!-- Külső hatszög és élvilágítások -->
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="#1e9a40"/>
+                <polygon points="50,13 82,31 82,69 50,87 18,69 18,31" fill="#0b0e14"/>
+                <polygon points="50,13 82,31 50,50" fill="#2cc257" opacity="0.35"/>
+                <polygon points="50,87 82,69 50,50" fill="#13672b" opacity="0.45"/>
                 
-                <!-- Belső G betű -->
-                <path d="M50 25 L71 37 L71 45 L50 33 L29 45 L29 63 L50 75 L71 63 L71 47 L50 47 L50 54 L63 54 L63 58 L50 66 L36 58 L36 49 L50 41 L63 49 L50 41 Z" fill="#28a745"/>
-                <path d="M50 25 L71 37 L50 48 Z" fill="#3cd65f" opacity="0.4"/>
-                <path d="M50 75 L71 63 L50 54 Z" fill="#126b2d" opacity="0.4"/>
+                <!-- Belső G alakzat 3D élekkel -->
+                <path d="M50 25 L73 38 L73 48 L50 35 L27 48 L27 65 L50 78 L73 65 L73 49 L48 49 L48 57 L63 57 L63 60 L50 67 L36 59 L36 52 L50 44 L63 52 L50 44 Z" fill="#22b246"/>
+                <path d="M50 25 L73 38 L50 50 Z" fill="#3fe268" opacity="0.4"/>
+                <path d="M50 78 L73 65 L50 54 Z" fill="#0f5222" opacity="0.5"/>
             </svg>
             
             <h1>GUIDMTA</h1>
@@ -361,66 +357,64 @@
             <a href="#segitseg-resz" class="btn-main">► Csatlakozz most</a>
         </div>
 
-        <!-- Segítség rész (2. képhez ugrik) -->
-        <div id="segitseg-resz">
-            <div class="card join-section">
-                <div class="monitor-box">
-                    <img src="monitor.png" alt="GUIDMTA Monitor" onerror="this.onerror=null; this.src='https://via.placeholder.com/450x300/0b0e14/ffffff?text=monitor.png';">
-                </div>
-                <div class="join-details">
-                    <h2>Csatlakozás a GUIDMTA szerverére</h2>
-                    
-                    <p class="bold-tagline">Légy részese Magyarország legnagyobb és legoptimalizáltabb GazdagRP közösségének!</p>
-                    
-                    <p class="sub-tagline">Vágj bele a második életedbe, itt minden lehetséges!</p>
-                    
-                    <ol class="steps-list">
-                        <li>Grand Theft Auto: San Andreas telepítése</li>
-                        <li>MTA:SA kliens letöltése</li>
-                        <li>MTA:SA kliens indítása</li>
-                        <li>GUIDMTA szócska begépelése a keresőbe</li>
-                    </ol>
-
-                    <p class="wish-text">Kellemes időtöltést kívánunk!</p>
-
-                    <a href="javascript:void(0);" class="btn-download">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                        </svg>
-                        MTA:SA letöltése
-                    </a>
-                </div>
+        <!-- Segítség rész (ugrás a letöltéshez) -->
+        <div id="segitseg-resz" class="card join-section">
+            <div class="monitor-box">
+                <img src="monitor.png" alt="GUIDMTA Monitor" onerror="this.onerror=null; this.src='https://via.placeholder.com/450x300/0b0e14/ffffff?text=monitor.png';">
             </div>
+            <div class="join-details">
+                <h2>Csatlakozás a GUIDMTA szerverére</h2>
+                
+                <p class="bold-tagline">Légy részese Magyarország legnagyobb és legoptimalizáltabb GazdagRP közösségének!</p>
+                
+                <p class="sub-tagline">Vágj bele a második életedbe, itt minden lehetséges!</p>
+                
+                <ol class="steps-list">
+                    <li>Grand Theft Auto: San Andreas telepítése</li>
+                    <li>MTA:SA kliens letöltése</li>
+                    <li>MTA:SA kliens indítása</li>
+                    <li>GUIDMTA szócska begépelése a keresőbe</li>
+                </ol>
 
-            <!-- Rendszerkövetelmények -->
-            <div class="specs-grid">
-                <div class="card spec-card">
-                    <h3>Minimum rendszerkövetelmény</h3>
-                    <ul>
-                        <li><strong>Operációs rendszer:</strong> Windows 10</li>
-                        <li><strong>CPU:</strong> Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz</li>
-                        <li><strong>RAM:</strong> 6GB</li>
-                        <li><strong>Videókártya:</strong> NVIDIA 9800 GT 1GB / AMD HD 4870 1GB</li>
-                        <li><strong>Felbontás:</strong> legalább 1600x900</li>
-                        <li><strong>Tárhely:</strong> 10GB</li>
-                    </ul>
-                </div>
+                <p class="wish-text">Kellemes időtöltést kívánunk!</p>
 
-                <div class="card spec-card">
-                    <h3>Ajánlott rendszerkövetelmény</h3>
-                    <ul>
-                        <li><strong>Operációs rendszer:</strong> Windows 10/11</li>
-                        <li><strong>CPU:</strong> Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)</li>
-                        <li><strong>RAM:</strong> 12GB</li>
-                        <li><strong>Videókártya:</strong> NVIDIA GTX 660 2GB / AMD HD 7870 2GB</li>
-                        <li><strong>Felbontás:</strong> legalább 1920x1080</li>
-                        <li><strong>Tárhely:</strong> 15GB (SSD)</li>
-                    </ul>
-                </div>
+                <a href="javascript:void(0);" class="btn-download">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    MTA:SA letöltése
+                </a>
             </div>
         </div>
 
-        <!-- Közösség rész (3. képhez ugrik) -->
+        <!-- Rendszerkövetelmények -->
+        <div class="specs-grid">
+            <div class="card spec-card">
+                <h3>Minimum rendszerkövetelmény</h3>
+                <ul>
+                    <li><strong>Operációs rendszer:</strong> Windows 10</li>
+                    <li><strong>CPU:</strong> Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz</li>
+                    <li><strong>RAM:</strong> 6GB</li>
+                    <li><strong>Videókártya:</strong> NVIDIA 9800 GT 1GB / AMD HD 4870 1GB</li>
+                    <li><strong>Felbontás:</strong> legalább 1600x900</li>
+                    <li><strong>Tárhely:</strong> 10GB</li>
+                </ul>
+            </div>
+
+            <div class="card spec-card">
+                <h3>Ajánlott rendszerkövetelmény</h3>
+                <ul>
+                    <li><strong>Operációs rendszer:</strong> Windows 10/11</li>
+                    <li><strong>CPU:</strong> Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)</li>
+                    <li><strong>RAM:</strong> 12GB</li>
+                    <li><strong>Videókártya:</strong> NVIDIA GTX 660 2GB / AMD HD 7870 2GB</li>
+                    <li><strong>Felbontás:</strong> legalább 1920x1080</li>
+                    <li><strong>Tárhely:</strong> 15GB (SSD)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Közösség rész (ugrás a Discord kártyára) -->
         <div id="kozosseg-resz" class="card discord-card">
             <div class="discord-info">
                 <h2>Csatlakozz Discord szerverünkre</h2>
@@ -447,14 +441,11 @@
     <footer>
         <div class="footer-logo">
             <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 8 L87 29.5 L87 70.5 L50 92 L13 70.5 L13 29.5 Z" fill="#1ea648"/>
-                <path d="M50 16 L79 32.5 L79 67.5 L50 84 L21 67.5 L21 32.5 Z" fill="#0b0e14"/>
-                <path d="M50 25 L71 37 L71 45 L50 33 L29 45 L29 63 L50 75 L71 63 L71 47 L50 47 L50 54 L63 54 L63 58 L50 66 L36 58 L36 49 L50 41 L63 49 L50 41 Z" fill="#28a745"/>
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="#1e9a40"/>
+                <polygon points="50,13 82,31 82,69 50,87 18,69 18,31" fill="#0b0e14"/>
+                <path d="M50 25 L73 38 L73 48 L50 35 L27 48 L27 65 L50 78 L73 65 L73 49 L48 49 L48 57 L63 57 L63 60 L50 67 L36 59 L36 52 L50 44 L63 52 L50 44 Z" fill="#22b246"/>
             </svg>
             GUIDMTA
         </div>
         <div>A legmodernebb magyar RolePlay közösség © 2026</div>
-    </footer>
-
-</body>
-</html>
+    </footer></body></html>
